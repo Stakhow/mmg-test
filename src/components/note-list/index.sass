@@ -1,0 +1,43 @@
+.note
+  &-list
+    &-item
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15)
+      background-color: #e9ecef
+      .content
+        border: 1px solid transparent
+      .content, .name, .comment
+        word-break: break-word
+      &__inner
+        min-height: 180px
+      .editable-field
+        padding: 10px
+        border-color: rgba(0, 0, 0, 0.15)
+        background-color: rgba(0, 0, 0, 0.05)
+        &:focus
+          outline: none
+      &:not(.editable):hover
+        cursor: pointer
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25)
+      &:not(.editable):active
+        transform: scale(.97)
+
+      .comment
+        &-item
+          &__author
+            font-size: .8rem
+          &__img
+            width: 25px
+            height: 25px
+            background-color: rgba(0, 0, 0, 0.15)
+            flex-shrink: 0
+          &__content
+            font-size: .8rem
+            -webkit-user-select: text
+            -moz-user-select: text
+            -ms-user-select: text
+            user-select: text
+            word-wrap: break-word
+            overflow: hidden
+            margin-bottom: 10px
+          &__date
+            font-size: .7rem

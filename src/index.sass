@@ -1,0 +1,50 @@
+@import "~bootstrap"
+
+body
+  margin: 0
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+code
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace
+
+img
+  max-width: 100%
+  height: auto
+
+button, a
+  &:disabled
+    cursor: not-allowed
+  
+
+.ReactModal__Overlay
+  opacity: 0
+  transition: opacity .3s ease-in-out
+
+
+.ReactModal__Overlay
+  background-color: rgba(0,0,0,0.8)
+  &--after-open
+    opacity: 1
+  &--before-close
+    opacity: 0
+
+.editable-field
+  -webkit-user-select: text
+  -moz-user-select: text
+  -ms-user-select: text
+  user-select: text
+  word-wrap: break-word
+  overflow: hidden
+  &_textarea
+    height: 100px
+
+.errorLabel, .errorInput
+  color: tomato
+
+.errorInput
+  box-shadow: 0 0 3px 1px tomato
+
+
+
